@@ -14,11 +14,14 @@ protocol MenuPresenterProtocol: class {
 
 class MenuPresenter: MenuPresenterProtocol {
     
+    
     private weak var view: MenuProtocol?
     private let networkService: NetworkServiceProtocol = NetworkService()
     private var searchResponce: [Menu]? = nil
+    private var id: Int!
+    var imageTest: String?
+    private let favoriteManager = FavoriteManager.shared
 
-    
     required init(view: MenuProtocol) {
         self.view = view
         self.getMenu()

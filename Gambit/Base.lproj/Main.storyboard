@@ -133,12 +133,7 @@
                             <constraint firstItem="ZdB-Ss-Rf1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nrV-i9-9nY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mKr-gT-ZVT">
-                        <barButtonItem key="rightBarButtonItem" image="gambit" id="lQX-oz-emx">
-                            <inset key="imageInsets" minX="0.0" minY="30" maxX="120" maxY="20"/>
-                            <inset key="largeContentSizeImageInsets" minX="100" minY="50" maxX="0.0" maxY="0.0"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="mKr-gT-ZVT"/>
                     <connections>
                         <outlet property="menuTableView" destination="ZdB-Ss-Rf1" id="CeZ-Bj-G6W"/>
                     </connections>
@@ -155,7 +150,7 @@
                     <navigationBar key="navigationBar" contentMode="center" largeTitles="YES" backIndicatorTransitionMaskImage="gambit" id="KIh-7Z-VRP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.8901960784313725" green="0.070588235294117646" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.070588235294117646" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

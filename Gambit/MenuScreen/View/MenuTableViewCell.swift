@@ -26,10 +26,14 @@ class MenuTableViewCell: UITableViewCell {
     private weak var delegate: MenuTableViewCellDelegate!
     private var cartManager = CartManager.shared
     private var order: Menu?
+    
+//    var isLiked: Bool = false
+        
 
-    func configurate(with model: Menu, delegate: MenuTableViewCellDelegate) {
+    func configurate(with model: Menu, delegate: MenuTableViewCellDelegate, _ isLiked: Bool) {
         self.order = model
         self.delegate = delegate
+
         order?.count = cartManager.getDishCount(by: model.id) ?? 0
 
 //        priceLabel.font = UIFont(name: "SFProDisplay-Semibold", size: 10)
